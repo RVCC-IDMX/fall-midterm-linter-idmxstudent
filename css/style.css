@@ -1,0 +1,31 @@
+:root {
+  --gray-100: 0 0% 10%;
+  --gray-200: 0 0% 25%;
+  --gray-300: 0 0% 46%;
+  --gray-400: 0 0% 83%;
+  --gray-500: 0 100% 96%;
+  --white: 0 0% 100%;
+}
+
+body {
+  width: min(100% - 2rem, 60ch);
+  margin-inline: auto;
+  display: grid;
+  padding-block: 2rem;
+  gap: 2rem;
+  font-family: Roboto, sans-serif;
+  color: hsl(var(--gray-200));
+}
+
+.hero,
+.footer {
+  background-color: hsl(var(--gray-400));
+  text-align: center;
+  padding-block: 2rem;
+}
+
+.main {
+  display: grid;
+  gap: 2rem;
+  place-items: center;
+}
